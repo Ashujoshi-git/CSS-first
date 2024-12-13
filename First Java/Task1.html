@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.red_box{
+    width: 200px;
+    height: 200px;
+    background: red;
+    margin-top: 10px;
+}
+.green_box{
+    width: 200px;
+    height: 200px;
+    background: rgb(0, 255, 72);
+    margin-top: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <div id="result"></div>
+    <script>
+       
+    for(let x=0;x<10;x++)
+    if(x<5){
+        let red_box="<div class='red_box' > <mark>Ashu </div>"
+        document.getElementById("result").innerHTML +=red_box;
+        console.log(x)
+    }
+    else{
+        let green_box="<div class='green_box'> <b>Ashu </div>"
+        document.getElementById('result').innerHTML +=green_box
+    }
+        
+    </script>
+    
+</body>
+</html>

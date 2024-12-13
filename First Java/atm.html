@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atm</title>
+</head>
+<body>
+
+    <script>
+        let pin=prompt(" Please Enter Your Pin");
+        if ( pin==1234)
+            { 
+        let amount=10000;
+        let question=prompt("1. check balance  2. withdraw");
+        if(question==1)
+    {
+        alert("your balance is " +amount);
+
+    }
+    else{}
+        let namount=prompt("Enter the amount you want to withdraw")
+        if (amount<=namount){
+            let res=amount-namount;
+            ;
+            alert("You have withdraw== " +amount" and your balance is "+res" ")
+        }
+        else{
+            alert("insufficient balance")
+        }
+        
+    
+            }
+
+    else{
+        alert("invalid pin")
+    }
+        </script>
+</body>
+</html>
